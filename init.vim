@@ -10,7 +10,6 @@ source $HOME/.config/nvim/themes/gruvbox.vim
 "source $HOME/.config/nvim/themes/onedark.vim
 "}
 
-source $HOME/.config/nvim/general/coc.vim
 source $HOME/.config/nvim/general/indentline.vim
 source $HOME/.config/nvim/general/maps.vim
 source $HOME/.config/nvim/general/sets.vim

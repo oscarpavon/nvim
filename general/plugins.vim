@@ -14,7 +14,7 @@ call plug#begin('~/.config/nvim/autoload/plugs')
   Plug 'itchyny/lightline.vim'
 
   " VS Code like intellisense and language-servers
-  Plug 'neoclide/coc.nvim'
+ " Plug 'neoclide/coc.nvim'
 
   " Auto pairs for (), [], "", '', {}
   Plug 'jiangmiao/auto-pairs'
