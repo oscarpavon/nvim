@@ -11,12 +11,12 @@ map <F7> gg=G<C-o><C-o>
 map <F8> :set autochdir! autochdir?<CR>
 
 " Toggle display NERDTree
-map <C-n> :NERDTreeToggle<CR>
+"map <C-n> :NERDTreeToggle<CR>
 
 " Beginning and end of line
-imap <C-a> <home>
+"imap <C-a> <home>
 imap <C-e> <end>
-cmap <C-a> <home>
+"cmap <C-a> <home>
 cmap <C-e> <end>
 
 " Control-S Save
@@ -83,14 +83,14 @@ inoremap JK <esc>
 
 " quick edit init.vim
 nnoremap <silent>,init :tabe ~/.config/nvim/init.vim<cr>
-nnoremap <silent>,so :so ~/.config/nvim/init.vim<cr>:echo 'sourced'<cr>
+nnoremap <silent>,so :source ~/.config/nvim/init.vim<cr>:echo 'sourced'<cr>
 
 " shortcut for creating shebang
 inoremap ,she #!/data/data/com.termux/files/usr/bin/
 
 "" buffers handling
 " show list of buffers
-nnoremap <space>b :buffers<cr>
+"""nnoremap <space>b :buffers<cr>
 " switching; H for prev buffer, L for next buffer
 nnoremap <silent>H :bp<cr>
 nnoremap <silent>L :bn<cr>
@@ -100,3 +100,9 @@ nnoremap <silent>X :bd<cr>
 " tab handling prev & next tab
 nnoremap zz gT
 nnoremap mm gt
+
+nnoremap <silent>,1 :GFiles<CR>
+nnoremap <silent>,2 :Rg<CR>
+nnoremap <silent>,, :tabnew<CR>
+map <C-A> :A<CR>
+

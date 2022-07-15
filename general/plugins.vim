@@ -14,7 +14,7 @@ call plug#begin('~/.config/nvim/autoload/plugs')
   Plug 'itchyny/lightline.vim'
 
   " VS Code like intellisense and language-servers
- " Plug 'neoclide/coc.nvim'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
   " Auto pairs for (), [], "", '', {}
   Plug 'jiangmiao/auto-pairs'
@@ -24,7 +24,7 @@ call plug#begin('~/.config/nvim/autoload/plugs')
   "Plug 'uiiaoo/java-syntax.vim' " for java
 
   " FUZZY FINDER file finder
-  Plug 'junegunn/fzf'
+  Plug 'junegunn/fzf.vim'
 
   " NERDTree file explorer
   Plug 'preservim/nerdtree'
