@@ -36,7 +36,7 @@ call plug#begin('~/.config/nvim/autoload/plugs')
   Plug 'airblade/vim-gitgutter'
 
   " indent line
-  Plug 'Yggdroot/indentLine'
+"  Plug 'Yggdroot/indentLine'
 
 call plug#end()
 
