@@ -24,6 +24,7 @@ call plug#begin('~/.config/nvim/autoload/plugs')
   "Plug 'uiiaoo/java-syntax.vim' " for java
 
   " FUZZY FINDER file finder
+  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
 
   " NERDTree file explorer

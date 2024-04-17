@@ -80,7 +80,7 @@ set noshowmode
 
 " uncomment below line according to your current shell
 "set shell=/data/data/com.termux/files/usr/bin/bash
-set shell=/data/data/com.termux/files/usr/bin/zsh
+set shell=/bin/sh
 
 " Allow color schemes to do bright colors without forcing bold.
 if &t_Co == 8 && $TERM !~# '^linux\|^Eterm'

@@ -6,8 +6,8 @@ source $HOME/.config/nvim/general/plugins.vim
 " ## uncomment your desired colorscheme, restart needed ##
 "{
 "source $HOME/.config/nvim/themes/ayu.vim
-source $HOME/.config/nvim/themes/gruvbox.vim
-"source $HOME/.config/nvim/themes/onedark.vim
+"source $HOME/.config/nvim/themes/gruvbox.vim
+source $HOME/.config/nvim/themes/onedark.vim
 "}
 
 source $HOME/.config/nvim/general/coc.vim
