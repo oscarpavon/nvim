@@ -6,9 +6,9 @@ call plug#begin('~/.config/nvim/autoload/plugs')
 
   " Themes
   Plug 'joshdick/onedark.vim'
-  Plug 'morhetz/gruvbox'
-  Plug 'lifepillar/vim-gruvbox8'
-  Plug 'ayu-theme/ayu-vim'
+  "Plug 'morhetz/gruvbox'
+  "Plug 'lifepillar/vim-gruvbox8'
+  "Plug 'ayu-theme/ayu-vim'
 
   " statusline
   Plug 'itchyny/lightline.vim'
@@ -28,10 +28,10 @@ call plug#begin('~/.config/nvim/autoload/plugs')
   Plug 'junegunn/fzf.vim'
 
   " NERDTree file explorer
-  Plug 'preservim/nerdtree'
+  "Plug 'preservim/nerdtree'
 
   " Dev icons displays file's icons
-  Plug 'ryanoasis/vim-devicons'
+  "Plug 'ryanoasis/vim-devicons'
 
   " git tracker plugin
   Plug 'airblade/vim-gitgutter'
@@ -39,7 +39,14 @@ call plug#begin('~/.config/nvim/autoload/plugs')
   " indent line
 "  Plug 'Yggdroot/indentLine'
 
+  Plug 'numToStr/Comment.nvim' 
+
+  Plug 'xuhdev/vim-latex-live-preview'
+  
+
 call plug#end()
+
+lua require('Comment').setup()
 
 " Automatically install missing plugins on startup
 autocmd VimEnter *
