@@ -6,11 +6,17 @@
 local vimrc = vim.fn.stdpath("config") .. "/nvimconfig.vim"
 vim.cmd.source(vimrc)
 
-local project_file = vim.fn.getcwd() .. '/project.godot'
-if project_file then
+function file_exists(name)
+   local f=io.open(name,"r")
+   if f~=nil then io.close(f) return true else return false end
+end
+
+if file_exists('project.godot') then
   vim.fn.serverstart './godothost'
   local main_file = vim.fn.getcwd() .. '/source_code/main.gd'
-  vim.cmd('e' .. main_file)
+  if main_file then
+    vim.cmd('e' .. main_file)
+  end
   local pavon_godot_config = vim.fn.stdpath("config") .. "/gdev/plugin/pavon_godot.lua"
   vim.cmd.source(pavon_godot_config)
   vim.cmd('LspStart')
