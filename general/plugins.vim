@@ -53,7 +53,8 @@ call plug#begin('~/.config/nvim/autoload/plugs')
   Plug 'neovim/nvim-lspconfig', {'for': ['gdscript']}
   Plug 'hrsh7th/cmp-nvim-lsp', {'for': ['gdscript']}
   Plug 'hrsh7th/nvim-cmp', {'for': ['gdscript']}
-  Plug '/root/.config/nvim/gdev', {'for': ['gdscript']}
+  Plug 'habamax/vim-godot', {'for': ['gdscript']}
+  "Plug '/root/.config/nvim/gdev', {'for': ['gdscript']}
 
   
 
