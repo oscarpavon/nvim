@@ -12,8 +12,8 @@ source $HOME/.config/nvim/general/plugins.vim
 source $HOME/.config/nvim/themes/onedark.vim
 "}
 
-source $HOME/.config/nvim/general/coc.vim
-source $HOME/.config/nvim/a.vim
+"source $HOME/.config/nvim/general/coc.vim
+"source $HOME/.config/nvim/a.vim
 "source $HOME/.config/nvim/general/indentline.vim
 source $HOME/.config/nvim/general/maps.vim
 source $HOME/.config/nvim/general/sets.vim

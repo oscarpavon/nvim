@@ -14,12 +14,17 @@ call plug#begin('~/.config/nvim/autoload/plugs')
   Plug 'itchyny/lightline.vim'
 
   " VS Code like intellisense and language-servers
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  "Plug 'neoclide/coc.nvim', {'branch': 'release'}, {'for': ['c']}
+  Plug 'neoclide/coc.nvim', {'for': ['c'],'branch': 'release'}
+  Plug '/root/.config/nvim/cdev',{'for': ['c']}
+
 
   " Auto pairs for (), [], "", '', {}
   Plug 'jiangmiao/auto-pairs'
 
   " for better syntax highlighting
+  
+  
   Plug 'sheerun/vim-polyglot'
   "Plug 'uiiaoo/java-syntax.vim' " for java
 
@@ -41,7 +46,15 @@ call plug#begin('~/.config/nvim/autoload/plugs')
 
   Plug 'numToStr/Comment.nvim' 
 
+  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
   Plug 'xuhdev/vim-latex-live-preview'
+
+  Plug 'neovim/nvim-lspconfig', {'for': ['gdscript']}
+  Plug 'hrsh7th/cmp-nvim-lsp', {'for': ['gdscript']}
+  Plug 'hrsh7th/nvim-cmp', {'for': ['gdscript']}
+  Plug '/root/.config/nvim/gdev', {'for': ['gdscript']}
+
   
 
 call plug#end()
