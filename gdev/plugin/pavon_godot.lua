@@ -31,5 +31,25 @@ require('nvim-treesitter.configs').setup {
 }
 
 
+local dap = require 'dap'
+dap.adapters.godot = {
+  type = "server",
+  host = '127.0.0.1',
+  port = 6006, 
+}
+
+dap.configurations.gdscript = {
+  {
+    type = "godot",
+    request = "launch",
+    name = "Launch scene",
+    project = "${workspaceFolder}",
+  }
+}
+
+
 local buffer_options = { noremap=true, silent=true, buffer=bufnr }
 vim.keymap.set('n', 'gd', vim.lsp.buf.definition, buffer_options)
+
+
+vim.keymap.set('n', '<F5>', dap.continue)

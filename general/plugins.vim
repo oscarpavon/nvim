@@ -55,6 +55,7 @@ call plug#begin('~/.config/nvim/autoload/plugs')
   Plug 'hrsh7th/nvim-cmp', {'for': ['gdscript']}
   Plug 'habamax/vim-godot', {'for': ['gdscript']}
   Plug 'L3MON4D3/LuaSnip', {'for': ['gdscript']}
+  Plug 'mfussenegger/nvim-dap', {'for': ['gdscript']}
   "Plug '/root/.config/nvim/gdev', {'for': ['gdscript']}
 
   
