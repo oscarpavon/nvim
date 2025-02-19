@@ -4,6 +4,8 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugs')
 
+  Plug 'neovim/nvim-lspconfig'
+
   " Themes
   Plug 'joshdick/onedark.vim'
   "Plug 'morhetz/gruvbox'
@@ -14,9 +16,8 @@ call plug#begin('~/.config/nvim/autoload/plugs')
   Plug 'itchyny/lightline.vim'
 
   " VS Code like intellisense and language-servers
-  "Plug 'neoclide/coc.nvim', {'branch': 'release'}, {'for': ['c']}
-  Plug 'neoclide/coc.nvim', {'for': ['c'],'branch': 'release'}
-  Plug '/root/.config/nvim/cdev',{'for': ['c']}
+  "Plug 'neoclide/coc.nvim', {'for': ['c'],'branch': 'release'}
+  "Plug '/root/.config/nvim/cdev',{'for': ['c']}
 
 
   " Auto pairs for (), [], "", '', {}
@@ -35,9 +36,6 @@ call plug#begin('~/.config/nvim/autoload/plugs')
   " NERDTree file explorer
   "Plug 'preservim/nerdtree'
 
-  " Dev icons displays file's icons
-  "Plug 'ryanoasis/vim-devicons'
-
   " git tracker plugin
   Plug 'airblade/vim-gitgutter'
 
@@ -46,17 +44,16 @@ call plug#begin('~/.config/nvim/autoload/plugs')
 
   Plug 'numToStr/Comment.nvim' 
 
-  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+  "Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
   Plug 'xuhdev/vim-latex-live-preview'
 
-  Plug 'neovim/nvim-lspconfig', {'for': ['gdscript']}
-  Plug 'hrsh7th/cmp-nvim-lsp', {'for': ['gdscript']}
-  Plug 'hrsh7th/nvim-cmp', {'for': ['gdscript']}
-  Plug 'habamax/vim-godot', {'for': ['gdscript']}
-  Plug 'L3MON4D3/LuaSnip', {'for': ['gdscript']}
-  Plug 'mfussenegger/nvim-dap', {'for': ['gdscript']}
-  "Plug '/root/.config/nvim/gdev', {'for': ['gdscript']}
+  Plug 'hrsh7th/cmp-nvim-lsp'
+  Plug 'hrsh7th/nvim-cmp'
+  Plug 'habamax/vim-godot'
+  Plug 'L3MON4D3/LuaSnip'
+  Plug 'mfussenegger/nvim-dap'
+  Plug '/root/.config/nvim/gdev'
 
   
 

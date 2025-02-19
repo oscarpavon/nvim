@@ -1,7 +1,3 @@
--- local pipepath = vim.fn.stdpath("cache") .. "/server.pipe"
--- if not vim.loop.fs_stat(pipepath) then
---   vim.fn.serverstart(pipepath)
--- end
 
 local vimrc = vim.fn.stdpath("config") .. "/nvimconfig.vim"
 vim.cmd.source(vimrc)
@@ -17,8 +13,7 @@ if file_exists('project.godot') then
   if main_file then
     vim.cmd('e' .. main_file)
   end
-  local pavon_godot_config = vim.fn.stdpath("config") .. "/gdev/plugin/pavon_godot.lua"
-  vim.cmd.source(pavon_godot_config)
-  vim.cmd('LspStart')
+  --local pavon_godot_config = vim.fn.stdpath("config") .. "/gdev/plugin/pavon_godot.lua"
+  --vim.cmd.source(pavon_godot_config)
 end
 
